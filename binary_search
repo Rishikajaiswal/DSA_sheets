@@ -1,5 +1,5 @@
 def binary_search(list,key,low,high):
-    if low<=high:
+    while low<=high:
         mid=low+high//2
         if list[mid]<key:
             return binary_search(list, key, mid + 1,high)
