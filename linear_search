@@ -1,0 +1,14 @@
+def lin_search(list,k,n):
+    for i in range(n):
+        if list[i]==k:
+            return i
+    return -1    
+list=[x for x in range(1,50) if x%5==0]
+print(list)
+k=int(input("Enter the element you want to search : "))
+n=len(list)
+result=lin_search(list,k,n)
+if result == -1:
+    print("Element not found")
+else:
+    print("Element found at index : ",result)
